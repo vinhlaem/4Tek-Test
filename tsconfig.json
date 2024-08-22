@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "useUnknownInCatchVariables": false,
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "paths": {
+      "react": [
+        "./node_modules/@types/react"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "hardhat/deploy/00_deploy_nft_contract.js",
+    "hardhat/test/test.js",
+    "hardhat/utils/common.js",
+    "hardhat/utils/create2.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

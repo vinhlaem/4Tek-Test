@@ -1,0 +1,201 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+  // overflow-x: hidden;
+  height:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  nextjs-portal {
+    display: none;
+  }
+}
+
+
+// @font-face {
+//   font-family: "Poetsen One", sans-serif;
+// font-weight: 400;
+// font-style: normal;
+// }
+
+
+.maxW {
+  width: full;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 20%;
+  background: 0 0
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e0cbcb;
+  
+}
+
+@media only screen and (max-width: 1200px) {
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c0a0b9
+}
+
+.chakra-popover__popper {
+  z-index: 9999999 !important;
+}
+
+.background-banner {
+  background: url(../public/images/hero.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+@media screen and (max-width: 1199px) {
+  .background-banner {
+    height: 70vh;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    width: 100%;
+    background: url(../public/images/hero.png);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .background-banner {
+    height: 100vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    background: url(../public/images/hero-mobile.png);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .background-banner {
+    height: 150vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    background: url(../public/images/hero-mobile.png);
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .background-banner {
+    height: 100vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    background: url(../public/images/hero-mobile.png);
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .background-banner {
+    height: 120vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    background: url(../public/images/hero-mobile.png);
+
+  }
+}
+
+
+.background-footer {
+  background: url(../public/images/bg-footer.png);
+  height: 40vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: top center;
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 764px) {
+  .background-footer {
+    background: url(../public/images/bg-footer.png);
+    height: 60vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: top center;
+    background-size: cover;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .background-footer {
+    background: url(../public/images/bg-footer.png);
+    height: 65vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: top center;
+    background-size: cover;
+  }
+.text-mobile{
+  font-size: 44px !important;
+}
+
+}
+
+.slick-prev{
+  left: 50px !important;
+  z-index: 9999 !important;
+}
+.slick-next{
+  right: 30px !important;
+  z-index: 9999 !important;
+
+}
+
+.galleryImageModal{
+  columns: 4;
+  gap: 10px;
+  width: 100%;
+}
+
+.process {
+  animation: catanimation 4s infinite linear
+}
+
+@keyframes catanimation {
+  0% {
+    transform: translate(0px, 0px);
+    animation-timing-function: ease-in-out
+  }
+
+  50% {
+    transform: translate(0px, 12px);
+    animation-timing-function: ease-in-out
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    animation-timing-function: ease-in-out
+  }
+}
+
+
+
+
+
+
+
+
