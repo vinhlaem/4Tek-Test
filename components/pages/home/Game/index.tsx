@@ -95,7 +95,7 @@ export default function Game() {
       justifyContent="center"
       alignItems="center"
       direction="column"
-      scrollMarginTop={{ base: "200px", lg: "unset" }}
+      scrollMarginTop={{ base: "350px", lg: "100px" }}
     >
       <TemplateText
         txt={t("common:game.title")}
@@ -131,7 +131,7 @@ export default function Game() {
             <Box p="20px">
               <TemplateText
                 txt={game.name}
-                fontSize="48px"
+                fontSize={{ base: "30px", md: "48px" }}
                 lineHeight="45px"
                 color="#fff"
                 borderRadius="50px"

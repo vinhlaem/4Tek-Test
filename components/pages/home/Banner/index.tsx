@@ -6,7 +6,7 @@ import CountDown from "components/pages/home/Banner/Countdown";
 import { CheckScrollContext } from "context/CheckScroll";
 import useCountDown from "hooks/useCountDown";
 import useTranslation from "next-translate/useTranslation";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useCallback, useContext, useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 
 export default function Banner() {
@@ -33,6 +33,13 @@ export default function Banner() {
       }
     };
   }, [setIsScroll]);
+
+  const handleClickScroll = useCallback(() => {
+    const element = document.getElementById("#banner");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <Flex
@@ -67,7 +74,7 @@ export default function Banner() {
         bottom="50px"
         bg="#fff"
         boxShadow=" rgba(0, 0, 0, 0.1) 0px 8px 14px"
-        onClick={() => window.scrollTo(0, 0)}
+        onClick={handleClickScroll}
       >
         <Box
           transform={isScroll ? "rotate(180deg)" : "rotate(0deg)"}

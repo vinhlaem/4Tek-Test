@@ -140,21 +140,6 @@ body {
   
 }
 
-@media screen and (max-width: 480px) {
-  .background-footer {
-    background: url(../public/images/bg-footer.png);
-    height: 65vh;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-position: top center;
-    background-size: cover;
-  }
-.text-mobile{
-  font-size: 44px !important;
-}
-
-}
-
 .slick-prev{
   left: 50px !important;
   z-index: 9999 !important;
@@ -164,6 +149,31 @@ body {
   z-index: 9999 !important;
 
 }
+
+@media screen and (max-width: 480px) {
+  .background-footer {
+    background: url(../public/images/bg-footer.png);
+    height: 70vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: top center;
+    background-size: cover;
+  }
+.text-mobile{
+  font-size: 44px !important;
+}
+
+.slick-prev{
+  left: 20px !important;
+}
+.slick-next{
+  right: 10px !important;
+
+}
+
+}
+
+
 
 .galleryImageModal{
   columns: 4;
